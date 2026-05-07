@@ -1,47 +1,30 @@
 # Archivo del Carnaval del Campo de Gibraltar
 
-Web estática lista para subir a GitHub Pages, Netlify o Vercel.
+Web en un solo archivo `index.html`, lista para subir a GitHub Pages.
 
-## Cómo editar los datos
+## Cómo editar datos
 
-Edita estos archivos:
+Abre `index.html` y busca estas constantes dentro del `<script>`:
 
-- `data/agrupaciones.json` → fichas de agrupaciones.
-- `data/fotos.json` → fototeca, carteles y documentos visuales.
-- `data/municipios.json` → textos de cada municipio.
+- `agrupaciones`
+- `fotos`
+- `carteles`
+- `municipiosData`
+- `timelineData`
 
-## Cómo subir imágenes
-
-Opción sencilla:
-1. Mete las fotos dentro de la carpeta `assets`.
-2. En `data/fotos.json`, en el campo `imagen`, escribe la ruta.
-
-Ejemplo:
-
-```json
-"imagen": "assets/foto-1998.jpg"
-```
-
-También puedes pegar enlaces externos de imágenes si están publicados online.
+Ahí puedes añadir, quitar o modificar información.
 
 ## Cómo publicarlo en GitHub Pages
 
 1. Crea un repositorio nuevo en GitHub.
-2. Sube todos estos archivos.
-3. Ve a `Settings` → `Pages`.
-4. En `Source`, selecciona `Deploy from a branch`.
-5. Elige la rama `main` y carpeta `/root`.
-6. Guarda.
+2. Sube el archivo `index.html`.
+3. Entra en Settings > Pages.
+4. En Source elige `Deploy from a branch`.
+5. Selecciona `main` y `/root`.
+6. Guarda y espera a que GitHub genere la URL.
 
-Tu web aparecerá en una dirección tipo:
+## Contacto configurado
 
-`https://tuusuario.github.io/nombre-del-repositorio/`
-
-## Colores usados
-
-- Azul: `#3986ff`
-- Rosa: `#f91669`
-- Amarillo: `#fcbd0d`
-- Verde: `#48bb75`
-- Naranja: `#fb5608`
-- Blanco
+- Formulario: https://carnavalinense.com
+- Email: carnavalinense@gmail.com
+- Redes: Carnavalinense
