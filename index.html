@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Archivo del Carnaval del Campo de Gibraltar</title>
+  <meta name="description" content="Archivo histórico y memoria digital del Carnaval del Campo de Gibraltar: agrupaciones, fotografías, carteles, historia y patrimonio carnavalero." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Inicio">
+      <img src="assets/logo-archivo-carnaval.png" alt="Archivo del Carnaval del Campo de Gibraltar" />
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#agrupaciones">Agrupaciones</a>
+      <a href="#fototeca">Fototeca</a>
+      <a href="#municipios">Municipios</a>
+      <a href="#cronologia">Cronología</a>
+      <a href="#aporta" class="nav-cta">Aporta</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="confetti"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Archivo vivo · Fototeca · Enciclopedia carnavalera</p>
+        <h1>La memoria del Carnaval del Campo de Gibraltar, reunida en un solo lugar.</h1>
+        <p class="lead">Un proyecto colaborativo para conservar agrupaciones, fotografías, carteles, autores, palmarés, anécdotas y documentos que forman parte de nuestra historia carnavalera.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#aporta">Enviar aportación</a>
+          <a class="btn secondary" href="#agrupaciones">Explorar archivo</a>
+        </div>
+        <div class="search-panel">
+          <label for="globalSearch">Buscar en el archivo</label>
+          <input id="globalSearch" type="search" placeholder="Busca agrupación, municipio, año, autor, modalidad..." />
+        </div>
+      </div>
+      <div class="hero-card">
+        <img src="assets/logo-archivo-carnaval.png" alt="Logo del archivo" />
+        <p>Entre todos construiremos la memoria del Carnaval del Campo de Gibraltar.</p>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Estadísticas del archivo">
+      <article><strong id="statAgrupaciones">0</strong><span>Agrupaciones archivadas</span></article>
+      <article><strong id="statFotos">0</strong><span>Fotografías</span></article>
+      <article><strong id="statMunicipios">8</strong><span>Municipios</span></article>
+      <article><strong id="statAnios">0</strong><span>Años documentados</span></article>
+    </section>
+
+    <section class="quick-links section">
+      <div class="section-title">
+        <p class="eyebrow">Acceso rápido</p>
+        <h2>Explora el archivo por categorías</h2>
+      </div>
+      <div class="link-grid">
+        <a href="#municipios">Municipios</a>
+        <a href="#agrupaciones">Modalidades</a>
+        <a href="#cronologia">Décadas</a>
+        <a href="#agrupaciones">Agrupaciones históricas</a>
+        <a href="#fototeca">Carteles</a>
+        <a href="#fototeca">Fototeca</a>
+      </div>
+    </section>
+
+    <section class="section" id="agrupaciones">
+      <div class="section-title">
+        <p class="eyebrow">Base de datos tipo wiki</p>
+        <h2>Agrupaciones</h2>
+        <p>Fichas conectadas con historia, autores, componentes, palmarés, fotografías y material relacionado.</p>
+      </div>
+      <div class="filters">
+        <select id="filterMunicipio"><option value="">Todos los municipios</option></select>
+        <select id="filterModalidad"><option value="">Todas las modalidades</option></select>
+        <select id="filterDecada"><option value="">Todas las décadas</option></select>
+      </div>
+      <div class="cards-grid" id="agrupacionesGrid"></div>
+    </section>
+
+    <section class="section alt" id="fototeca">
+      <div class="section-title">
+        <p class="eyebrow">Archivo visual</p>
+        <h2>Fototeca y carteles</h2>
+        <p>Galería documental con imágenes, licencia, autoría, año, municipio y agrupación relacionada.</p>
+      </div>
+      <div class="gallery" id="galleryGrid"></div>
+    </section>
+
+    <section class="section" id="municipios">
+      <div class="section-title">
+        <p class="eyebrow">Campo de Gibraltar</p>
+        <h2>Municipios</h2>
+        <p>El archivo se organiza por localidades para conservar la memoria carnavalera de toda la comarca.</p>
+      </div>
+      <div class="municipios-grid" id="municipiosGrid"></div>
+    </section>
+
+    <section class="section alt" id="cronologia">
+      <div class="section-title">
+        <p class="eyebrow">Línea temporal</p>
+        <h2>Cronología del carnaval</h2>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <section class="section aporta" id="aporta">
+      <div class="aporta-card">
+        <p class="eyebrow">Participa</p>
+        <h2>Envía tus aportaciones</h2>
+        <p>Buscamos fotos, vídeos, carteles, letras, recuerdos, datos de agrupaciones, componentes, autores, premios y anécdotas.</p>
+        <div class="aporta-grid">
+          <article><strong>1</strong><h3>Formulario web</h3><p>Entra en <b>carnavalinense.com</b> y completa el formulario disponible en el perfil de redes.</p></article>
+          <article><strong>2</strong><h3>Correo electrónico</h3><p>Envía el material a <b>carnavalinense@gmail.com</b>.</p></article>
+          <article><strong>3</strong><h3>Redes sociales</h3><p>Manda tu información por mensaje directo en Facebook o Instagram.</p></article>
+        </div>
+        <h3>Datos obligatorios</h3>
+        <ul class="check-list">
+          <li>Municipio del Campo de Gibraltar</li>
+          <li>Nombre de la agrupación</li>
+          <li>Año de la agrupación</li>
+          <li>Modalidad</li>
+        </ul>
+        <h3>Datos opcionales</h3>
+        <p>Autores, componentes, premios/palmarés, descripción, anécdotas o información adicional.</p>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="section-title">
+        <p class="eyebrow">Sobre el proyecto</p>
+        <h2>Un archivo cultural, ciudadano y abierto</h2>
+        <p>El Archivo del Carnaval del Campo de Gibraltar nace para recopilar, catalogar y difundir el patrimonio histórico y audiovisual del carnaval comarcal. Su finalidad es preservar la memoria de nuestras agrupaciones, autores, comparsistas, chirigoteros, carnavaleros, carteles, fotografías y vivencias populares.</p>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="modal" class="modal">
+    <button id="closeModal" class="close" aria-label="Cerrar">×</button>
+    <div id="modalContent"></div>
+  </dialog>
+
+  <footer class="footer">
+    <p>Archivo del Carnaval del Campo de Gibraltar · Proyecto digital Carnavalinense</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
